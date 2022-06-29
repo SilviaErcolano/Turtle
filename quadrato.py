@@ -1,0 +1,32 @@
+from turtle import *
+a=Turtle()
+b=Screen()
+a.begin_fill()
+a.penup()
+a.goto(-60,60)
+a.pendown()
+a.color("orange","orange")
+for _ in range(0,4):
+    a.forward(240)
+    a.right(90)
+a.end_fill()
+a.begin_fill()
+a.penup()
+a.goto(0,0)
+a.pendown()
+a.color("purple","purple")
+for _ in range (0,4):
+    a.forward(120)
+    a.right(90)
+a.end_fill()
+a.penup()
+a.goto(40,-40)
+a.pendown()
+a.color("yellow","yellow")
+a.begin_fill()
+for _ in range(0,4):
+    a.forward(40)
+    a.right(90)
+a.end_fill()
+
+b.mainloop()
