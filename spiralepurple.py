@@ -1,0 +1,32 @@
+from turtle import Turtle,Screen
+i=Turtle()
+h=Screen()
+h.bgcolor("yellow")
+i.turtlesize(0.5)
+i.color("magenta")
+i.speed(15)
+a=0
+i.width(2)
+#while a<=165:
+for a in range(0,166):
+    i.begin_fill()
+    #a=a+1
+    print(a)
+    i.forward(a)
+    i.right(90)
+    i.left(560)
+    #i.left(230)
+    #i.left(330)
+    i.forward(a)
+    i.left(330)
+    i.right(330)
+    i.forward(a)
+    i.left(45)
+    i.forward(a)
+    i.right(120)
+    x=i.xcor()
+    y=i.ycor()
+    print("x=",x,"y=",y)
+    i.fillcolor("purple")
+    i.end_fill()
+h.mainloop()
