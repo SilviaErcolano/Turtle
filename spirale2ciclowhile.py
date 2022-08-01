@@ -1,0 +1,23 @@
+from turtle import Turtle,Screen
+t=Turtle()
+s=Screen()
+a=int()
+t.width(10)
+t.color("yellow")
+t.speed("fastest")
+while a<=250:
+    a=a+1
+    t.begin_fill()
+    t.left(45)
+    t.forward(a)
+    t.right(45)
+    t.forward(a)
+    t.right(45)
+    t.forward(a)
+    t.fillcolor("magenta")
+    t.end_fill()
+    print("a=", a)
+    x = t.xcor()
+    y = t.ycor()
+    print("x=", x, "y=", y)
+s.mainloop()
