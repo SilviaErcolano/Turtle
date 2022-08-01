@@ -1,0 +1,15 @@
+from turtle import *
+t=Turtle()
+s=Screen()
+a=int()
+t.speed(15)
+t.color("black")
+for a in range(0,2400):
+    t.forward(a)
+    x=t.xcor()
+    y=t.ycor()
+    print("a=", a)
+    print("x=",x)
+    print("y=",y)
+    t.right(135)
+s.mainloop()
